@@ -1,0 +1,123 @@
+/* Pricing.css */
+
+.pricing {
+    padding: 20px;
+}
+
+.pricing-h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.pricing-h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.pricing-h2 span {
+    color: #007acc; /* Highlight color for the span */
+}
+
+.card {
+    margin: 20px; /* Space between cards */
+}
+
+.card h2 {
+    font-size: 1.8rem; /* Font size for card titles */
+}
+
+.card h4 {
+    font-size: 1.2rem; /* Font size for card subtitles */
+}
+
+.card p {
+    font-size: 1rem; /* Font size for card descriptions */
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between; /* Space between price and button */
+}
+
+.card-actions button {
+    background-color: #007acc; /* Button color */
+    color: white; /* Button text color */
+}
+
+.card-actions button:hover {
+    background-color: #005f99; /* Darker button color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .pricing {
+        padding: 20px; /* Adjust padding for mobile */
+        
+    margin-top: -30%;
+    }
+
+    .pricing-h4 {
+        font-size: 1.3rem; /* Smaller font size for header */
+        text-align: left;
+    }
+
+    .pricing-h2 {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-left: -30%;
+    }
+
+
+    .card {
+        margin: 10px; /* Reduce margin between cards */
+        width: 90%; /* Full width for cards on mobile */
+    }
+
+    .card h2 {
+        font-size: 1.5rem; /* Smaller font size for card titles */
+    }
+
+    .card h4 {
+        font-size: 1rem; /* Smaller font size for card subtitles */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Smaller font size for card descriptions */
+    }
+
+    .card-actions {
+        flex-direction: column; /* Stack price and button vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .card-actions button {
+        width: 100%; /* Full width button */
+        margin-top: 10px; /* Add margin above button */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .pricing-h4 {
+        font-size: 1.2rem; /* Further reduce font size for header */
+        text-align: left;
+    }
+
+    .pricing-h2 {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-left: -30%;
+    }
+
+    .card h2 {
+        font-size: 1.3rem; /* Further reduce font size for card titles */
+    }
+
+    .card h4 {
+        font-size: 0.9rem; /* Further reduce font size for card subtitles */
+    }
+
+    .card p {
+        font-size: 0.8rem; /* Further reduce font size for card descriptions */
+    }
+}

@@ -1,0 +1,224 @@
+/* Base Styles */
+.Hero-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 80px;
+  align-items: center;
+  padding: 40px 0;
+  transition: all 0.3s ease-in-out; /* Added for smooth layout adjustments */
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* About Section */
+
+.about h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.highlighted-name {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--highlight);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.about p {
+  margin-top: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: var(--highlight);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--text-secondary);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b436c;
+  transform: scale(1.05); /* Added hover scaling */
+}
+
+.download-cv {
+  text-decoration: underline;
+  color: #0078ff;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.download-cv:hover {
+  color: #0056b3;
+}
+
+.arrow-icon {
+  font-size: 0.7rem !important;
+  margin-left: 5px;
+}
+
+/* Image Section */
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.design {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 300px solid #1a5783;
+  z-index: 0;
+}
+
+.image img {
+  position: relative;
+  height: 350px;
+  z-index: 1;
+  border-radius: 50%;
+  bottom: 25px;
+  transition: transform 0.3s ease; /* Added for smooth scaling on hover */
+}
+
+/* Data Section */
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 10px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #000000;
+  flex: 1;
+}
+
+.data-number {
+  color: var(--highlight);
+  font-size: 25px;
+}
+
+.data-label {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.data1,
+.data2,
+.data3 {
+  border-bottom: 1px solid #353535;
+  padding-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .Hero-section {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .highlighted-name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .image img {
+    height: 250px;
+  }
+
+  .design {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid var(--highlight);
+  }
+
+  .data {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about p{
+    max-width: 400px;
+    margin-right: 10%;
+  }
+  .about h3 {
+    font-size: 1.2rem;
+  }
+
+  .highlighted-name {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .download-cv {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .image img {
+    height: 200px;
+  }
+
+  .design {
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid var(--highlight);
+  }
+}

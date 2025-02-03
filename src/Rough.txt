@@ -1,0 +1,7 @@
+bg = #131313
+light = #c8f220
+txt = #d1d1d1
+txt = #eaeaea
+sub bg = #070707
+
+bg = #F14E13

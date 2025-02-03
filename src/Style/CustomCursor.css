@@ -1,0 +1,28 @@
+html, body {
+  font-family: "Sora", serif;
+  cursor: none;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; Prevent overflow that causes scrollbars */
+}
+
+.custom-cursor {
+  position: fixed; /* Change to fixed to keep the cursor inside the viewport */
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background-color 0.2s ease;
+  box-shadow: inset 0 0px 10px 10px #000000;
+  z-index: 1000; /* Ensure it is on top */
+  border: 1px solid #000000;
+}
+
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}

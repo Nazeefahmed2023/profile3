@@ -1,0 +1,116 @@
+/*nav css*/
+/* Base styles */
+nav {
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow-x: hidden;
+  z-index: 111;
+}
+
+.nav-ul {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+li {
+  gap: 10px;
+  padding: 17px 17px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative; 
+  z-index: 1;
+}
+
+li:hover {
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* Hide the label by default */
+.nav-label {
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Prevents interaction while hidden */
+  position: absolute;
+  bottom: -30px; /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+}
+
+/* Show the label on hover */
+li:hover .nav-label {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Active styles */
+li.active {
+  background-color: #1a5783; /* Active background */
+  color: var(--text-secondary); /* Active text color */
+  border: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem 10px;
+    position: fixed;
+    bottom: 35%;
+    right: 3%;
+  }
+
+  ul {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.5rem 0;
+  }
+  .nav-ul{
+    height: 45vh;
+  }
+
+  li {
+    padding: 25px 10px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+
+  .nav-label {
+    display: block; /* Always show labels for smaller screens */
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  li {
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+
+  ul {
+    padding: 0.5rem 0.2rem;
+    
+  }
+}

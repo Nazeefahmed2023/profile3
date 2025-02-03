@@ -1,0 +1,134 @@
+.project {
+  height: auto;
+  margin: 0 60px;
+  padding: 20px 0;
+}
+
+h2,
+.project-h4 {
+  text-align: center;
+}
+
+.project-content-h2 {
+  text-align: left;
+  width: 100%;
+  margin: 0 -137px;
+}
+
+.project-showcase {
+  height: auto; /* Allow height to adjust */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 50px;
+  gap: 20px;
+  background-color: black;
+  padding: 50px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectimage,
+.project-content {
+  flex: 1;
+}
+
+.projectimage img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-content {
+  padding: 20px;
+  color: var(--text-secondary);
+}
+
+.project-content h4 {
+  font-size: 18px;
+  color: var(--highlight);
+  margin-bottom: 10px;
+}
+
+.project-content h2 {
+  font-size: 24px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.project-content p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #007acc;
+  cursor: pointer;
+}
+
+.project-button {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project {
+      margin:80px 20px; /* Adjust margins for mobile */
+  }
+
+  .project-showcase {
+      flex-direction: column; /* Stack items vertically */
+      margin: 20px 0; /* Adjust margin */
+      padding: 20px; /* Adjust padding */
+  }
+  .project-h4{
+    text-align: left;
+  }
+
+  .project-content {
+      padding: 10px; /* Adjust padding for content */
+  }
+
+   .project-h2 {
+      font-size: 20px; /* Smaller font size for mobile */
+      width: 100%;
+      margin-left: -33%;
+  }
+  
+  .project-content h2{
+    font-size: 15px;
+    margin: 0 80px 20px 30px;
+    width: 200%;
+  }
+  .project-content h4{
+    font-size: 16px;
+  }
+
+  .project-content p {
+      font-size: 14px; /* Smaller font size for description */
+  }
+
+  .project-button {
+      margin-top: 20px; /* Add margin for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-content-h2 {
+      font-size: 18px; /* Further reduce font size */
+      text-align: left;
+      width: 100%;
+  }
+
+  .project-content p {
+      font-size: 12px; /* Further reduce font size */
+  }
+
+  .project-button {
+      padding: 8px; /* Adjust button padding */
+      font-size: 12px; /* Smaller button font size */
+  }
+}

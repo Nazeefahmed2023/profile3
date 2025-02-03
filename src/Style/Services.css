@@ -1,0 +1,99 @@
+.services {
+    height: auto;
+    margin: 50px 0;
+    padding: 20px 0;
+}
+
+.heading-service, h2 {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem; /* Large font size for desktop */
+    margin: 0 auto;
+    position: relative;
+    left: 24%;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.service-data {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 2px dashed var(--highlight);
+    color: var(--text-secondary);
+    background-color: black;
+    flex: 1 1 30%; /* Allow items to grow and shrink */
+    min-width: 250px; /* Minimum width for each service item */
+}
+
+h5 {
+    color: var(--highlight);
+}
+
+.icon {
+    margin: 10px 0 0 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .heading-service, .service-h2 {
+        width: 80%; /* Increase width for smaller screens */
+        text-align: left;
+    }
+
+    .service-h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        left: 0; /* Reset left position */
+        text-align: left;
+    }
+
+    .service {
+        margin: 20px; /* Reduce margin */
+        padding: 20px 15px;
+
+    }
+
+    .service-data {
+        flex: 1 1 100%; /* Stack items vertically */
+        margin: 35px 0; /* Adjust margin for spacing */
+        padding: 15px; /* Adjust padding for better spacing */
+    }
+
+    h5 {
+        font-size: 1.2rem; /* Smaller font size for service titles */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-h2 {
+        font-size: 1.5rem; /* Further reduce font size */
+        width: 88%;
+        text-align: left;
+        margin-left: 35px;
+        margin-top: -10px;
+        margin-bottom: 0;
+    }
+
+    .heading-service {
+        font-size: 1.5rem; /* Smaller font size for heading */
+    }
+
+    .service-data {
+        padding: 10px; /* Further reduce padding */
+        margin-top: -20px;
+    }
+
+    h5 {
+        font-size: 1rem; /* Further reduce font size for service titles */
+    }
+}

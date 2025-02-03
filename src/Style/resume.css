@@ -1,0 +1,132 @@
+.resume {
+    height: auto; /* Allow height to adjust */
+    margin: 0 0 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.resumedata {
+    width: 70%;
+    flex-basis: 50%;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--sub-bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    box-shadow: 60px 22px 4px rgba(0, 0, 0, 0.1);
+}
+
+h6 {
+    margin: 0;
+    font-size: 15rem; /* Large font size for the asterisk */
+    color: var(--highlight);
+}
+
+.resume-h2 {
+    margin: 0;
+    font-size: 2.5rem; /* Large font size for the heading */
+    width: 100% !important;
+    text-align: left !important;
+    position: relative;
+    left: 0;
+}
+
+.experience {
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: black;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 7px;
+    color: var(--text-secondary);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--sub-bg-dark);
+    text-align: center;
+    line-height: 60px;
+    color: var(--highlight);
+    border-radius: 50%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .resumedata {
+        width: 90%; /* Full width on smaller screens */
+        padding: 5px; /* Adjust padding */
+    }
+
+    .circle {
+        width: 100px; /* Smaller circle size */
+        height: 100px; /* Smaller circle size */
+        margin: 20px; /* Adjust margin */
+    }
+
+    h6 {
+        font-size: 10rem; /* Smaller font size for the asterisk */
+    }
+
+    .resume-h2 {
+        font-size: 1.8rem; /* Smaller heading size */
+        text-align: left;
+
+    }
+
+    .experience {
+        flex-direction: column; /* Stack experience items vertically */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .icon {
+        width: 40px; /* Smaller icon size */
+        height: 40px; /* Smaller icon size */
+        line-height: 40px; /* Center icon */
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-h2 {
+        font-size: 1.5rem; /* Further reduce heading size */
+        text-align: left;
+    }
+    .resume-h4{
+        text-align: left;
+    }
+
+    h6 {
+        font-size: 8rem; /* Further reduce font size for the asterisk */
+    }
+
+    .circle {
+        width: 80px; /* Further reduce circle size */
+        height: 80px; /* Further reduce circle size */
+    }
+
+    .icon {
+        width: 35px; /* Further reduce icon size */
+        height: 35px; /* Further reduce icon size */
+        line-height: 35px; /* Center icon */
+    }
+
+    .experience {
+        padding: 26px; /* Adjust padding for smaller screens */
+    }
+}

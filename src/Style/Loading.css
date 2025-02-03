@@ -1,0 +1,21 @@
+.loading{
+    margin: 0 auto;
+}
+
+.load{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    height: 40vh;
+}
+
+
+
+@media(max-width:767px) {
+    .load{
+        position: absolute;
+        top: 30%;
+        left: 22%;
+        height: 25vh;
+    }
+}

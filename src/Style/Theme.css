@@ -1,0 +1,48 @@
+
+
+:root {
+  /* Light Mode Colors */
+  --bg-light: #fff;
+  --text-light-primary: #292828;
+  --text-light-secondary: #eaeaea;
+  --text-highlight-primary: #1a5783; /* Updated highlight color */
+  --sub-bg-light: #070707;
+  
+  /* Dark Mode Colors */
+  --bg-dark: #131313;
+  --text-dark-primary: #d1d1d1;
+  --text-dark-secondary: #eaeaea;
+  --text-highlight-primary: #1a5783; /* Updated highlight color */
+  --sub-bg-dark: #070707;
+
+  /* Shared Colors */
+  --highlight: #1a5783; /* Updated highlight color */
+}
+  :root {
+    --bg-color: var(--bg-light);
+    --text-primary: var(--text-light-primary);
+    --text-secondary: var(--text-light-secondary);
+    --highlight: var(--text-highlight-primary);
+    --sub-bg-color: var(--sub-bg-light);
+  }
+  
+  [data-theme='dark'] {
+    --bg-color: var(--bg-dark);
+    --text-primary: var(--text-dark-primary);
+    --text-secondary: var(--text-dark-secondary);
+    --highlight: var(--text-highlight-primary);
+    --sub-bg-color: var(--sub-bg-dark);
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+   
+  }
+ 
+.brand-icon{
+    color: var(--highlight);
+}  
+
+
