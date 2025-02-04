@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Irbaz from '../assets/profile1.png';
-import resume from '../assets/Irbaz Resume Original.pdf';
+import resume from '../assets/nazeef-resume (2).pdf';
 import { ArrowForwardIosOutlined } from '@mui/icons-material';
 import Nav from './Nav';
 import '../Style/Hero.css';
@@ -53,7 +53,7 @@ export default function HeroSection() {
         </p>
         <div className="button">
           <button onClick={handleNavigation}>Hire Me</button>
-          <a href={resume} className="download-cv" download="nazeef Ahmed CV.pdf">
+          <a href={resume} className="download-cv" download="nazeef-resume (2).pdf">
             Download CV <ArrowForwardIosOutlined className="arrow-icon" />
           </a>
         </div>
